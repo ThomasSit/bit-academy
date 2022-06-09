@@ -1,13 +1,8 @@
 <?php
 
-/*echo "Hallo persoon";
+$voornaam = readline('Wat is je voornaam ');
 
-$reactie = readline();
+$achternaam = readline('Wat is jou achternaam ');
 
-echo $reactie;*/
-
-$voornaam = readline('wat is je voornaam');
-$achternaam= readline('wat is jou achternaam');
-
-echo 'je volledige naam is' . $voornaam . $achternaam;
+echo "je volledige naam is " . $voornaam . " " . $achternaam;
 

@@ -94,7 +94,8 @@ th,td{
 
 #sidecontainer{
     border:1px white;
-
+    height: 70px;
+    width: 450px;
 }
 
 
