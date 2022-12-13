@@ -1,0 +1,41 @@
+Ik ga canvas gebruiken om een blok te maken met daarin een circle. Ik zet dat op bepaalde posities prciese
+posities
+Screen groote word 100% dus normaal groote en maak de plekken absolute
+
+1. begin eerst leren over de canvas
+
+Canvas kan niet gezien worden op je browser.
+Om dit te gebruiken gebruik je eigelijk css html en javascript
+om dit te laten uitvoeren begin je altijd met b.v de block
+dus <canvas id="myFirstBlock" width="100px" height="200px"></canvas>
+dus nu met javascript ga je dit uitvoeren.
+
+om canvas de activate of gebruiken doe eerst dit
+window.addEventLister("load", () =>{
+const canvas = document.querySelector("#canvas");
+const ctx = canvas.getContexrt("2d"); je maakt het 2d
+})
+
+var c = document.GetElementById('myFirstBlock');
+var ctx = c.getContext('2d')
+de getContext is een functie dat je gebruikt om toegang te krijgen
+in canvas 2d drawing functions.
+
+nu bij het begin van het uitvoeren.
+het gaat van x, y, h, w.
+
+dus b.v om een blok te maken moet je
+ctx.fillRect(100, 50, 200, 200);
+ctx.fillRect(x, y, h, w);
+let wel goed op de spatie na de comma
+fillRect maakt de hele blok zwart.
+
+rect = Rectengle
+strokeRect is eigelijk hetzelfde maar dan alleen met een border
+dus ook een box
+
+mijn beeldscherm de groote is 1272 x 758
+
+om een circle te maken moet je ctx.arc gebruiken
+om het te beginnen moet je ctx.beginPath();
+daarna om het aftesluiten ctx.stroke();
