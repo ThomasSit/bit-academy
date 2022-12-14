@@ -1,0 +1,7 @@
+Weten over SSH. https://www.youtube.com/watch?v=z7jVOenqFYk
+
+Commando's
+git status
+git add
+git commit (om nog tekst bijtevoegen waarom je dat heb gedaan) -m 'dit is een toevoeging van het bestand'
+git push
