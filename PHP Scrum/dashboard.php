@@ -1,5 +1,5 @@
 <?php 
-include "connect.php";
+include "include/connect.php";
 include "include/header.php";
 include "include/navbar.php";
 ?>
