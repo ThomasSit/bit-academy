@@ -24,7 +24,7 @@ if(isset($_POST['sumbit'])){
 
 
     if(isset($_POST['sumbit'])){
-    $sql = "INSERT INTO user (name, lastname, beschrijving) VALUES ('$name' , '$lastname' , '$beschrijving')";
+    $sql = "INSERT INTO question (name, lastname, beschrijving) VALUES ('$name' , '$lastname' , '$beschrijving')";
 
     
 }else{
@@ -42,4 +42,25 @@ if(isset($_POST['sumbit'])){
 
 }
 
-var_dump($_POST);
+
+$email =$_POST['email'];
+$password =$_POST['password'];
+
+
+$error = array();
+
+if(empty($email)){
+    $error[]  =  "Email is required";
+}
+
+if(empty($password)){
+    $error[] = "Password is required";
+}
+
+
+if(empty($error)){
+    $sql =  "SELECT * FROM user( email, password) values ('$email' , '$password')"; 
+    $conn->close();
+    header("location:succes.php");
+}
+
