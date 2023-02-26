@@ -1,8 +1,3 @@
-<?php 
-include "include/header.php";
-include "include/navbar.php";
-?>
-
 <?php
     session_start();
     if(!isset($_SESSION["username"])) {
@@ -10,6 +5,13 @@ include "include/navbar.php";
         exit();
     }
 ?>
+
+
+<?php 
+include "include/header.php";
+include "include/navbar.php";
+?>
+
 
 <form method="post" autocomplete="on" action="progress.php">
     <h2>Form</h2>

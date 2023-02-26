@@ -1,7 +1,3 @@
-<?php 
-include "include/header.php";
-include "include/navbar.php";
-?>
 <?php
     session_start();
     if(!isset($_SESSION["username"])) {
@@ -10,8 +6,15 @@ include "include/navbar.php";
     }
 ?>
 
+<?php 
+include "include/header.php";
+include "include/navbar.php";
+?>
+
+
 <h1>Home!</h1>
 <p>Welcome</p>
+
 
 
 
