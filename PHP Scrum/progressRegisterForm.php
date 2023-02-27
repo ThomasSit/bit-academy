@@ -53,8 +53,6 @@ if(isset($_POST['button'])){
     
     if(empty($_POST['password'])){
         $passwordErr = "PLease enter your password ";
-    }elseif (strtr($_POST['password'])) {
-        echo "Your";
     }
 
 }
