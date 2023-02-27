@@ -7,8 +7,8 @@ include "include/navbar.php";
 
 
 
-<form method="POST" action="progress.php">
-  <input type="email" name="email" placeholder="Email" required>
+<form method="POST" action="register.php" class="form-question">
+  <input type="username" name="username" placeholder="username" required>
   <input type="password" name="password" placeholder="Password" required>
   <button type="register-button">Register</button>
 </form>
@@ -19,12 +19,6 @@ include "include/navbar.php";
 
 
 
-
-
-<?php
-
-
-?>
 
 
 <?php

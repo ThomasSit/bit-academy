@@ -43,24 +43,3 @@ if(isset($_POST['sumbit'])){
 }
 
 
-$email =$_POST['email'];
-$password =$_POST['password'];
-
-
-$error = array();
-
-if(empty($email)){
-    $error[]  =  "Email is required";
-}
-
-if(empty($password)){
-    $error[] = "Password is required";
-}
-
-
-if(empty($error)){
-    $sql =  "SELECT * FROM user( email, password) values ('$email' , '$password')"; 
-    $conn->close();
-    header("location:succes.php");
-}
-

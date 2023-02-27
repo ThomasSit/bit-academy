@@ -13,7 +13,7 @@ include "include/navbar.php";
 <form method="post" autocomplete="on" action="login.php">
     <h2>Login</h2>
     <input type="email" name="email" id="email" placeholder="email" placeholder="email"><br><br>
-    <input type="password" name="password" id="password" placeholder="password"><br><br>
+    <input type="password" name="password" maxlength="9"  id="password" placeholder="password"><br><br>
     <button name="sumbit" type="submit">Submit</button>
 </form>
 
