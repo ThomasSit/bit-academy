@@ -1,14 +1,11 @@
 <?php
-    session_start();
-    if(!isset($_SESSION["username"])) {
-        header("Location: login.php");
-        exit();
-    }
-?>
+ session_start();
+?> 
 
 <?php 
 include "include/header.php";
 include "include/navbar.php";
+include "loginCheck.php";
 ?>
 
 

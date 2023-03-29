@@ -22,6 +22,7 @@ nav {
   nav .logo a {
     color: #fff;
     text-decoration: none;
+    padding-left: 150px;
   }
   
   nav .nav-rechts ul {
@@ -44,9 +45,6 @@ nav {
   nav .nav-rechts a:hover{
     color: blue;
   }
-
-
-
 
 form input, textarea {
     font-size: 20px;
@@ -88,4 +86,16 @@ form input, textarea {
     width: 300px;
 }
 
+button{
+  height: 25px;
+  border-radius: 5px;
+  
+  width: 100px;
+  border: .1px ;
+  background: linear-gradient(84deg, #468CCF 10%, #63B8EE 100%);
 
+}
+
+button:hover{
+  background: linear-gradient(84deg, #63B8EE  10%, #468CCF 100%);
+}
