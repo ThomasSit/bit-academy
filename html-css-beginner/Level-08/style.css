@@ -1,0 +1,44 @@
+
+
+body{
+    cursor: vertical-text;
+    /* dit zorgt ervor de pointer die verandert  */
+}
+
+
+.paars{
+    background-color:rgb(222, 94, 222);
+}
+
+.blauw{
+    background-color:rgb(151, 122, 224);
+}
+
+.geel{
+    background-color: rgb(230, 230, 101);
+}
+
+.rood{
+    background-color: rgb(222, 97, 97);
+}
+
+th,td{
+    border: 2px ;
+    padding:10px;
+    width: 50px;
+    background-color: gainsboro;
+    text-decoration: none;
+}
+
+th:hover{
+    color:rgb(57, 233, 57);
+    background-color: black;
+}
+td:hover{
+    color:rgb(57, 233, 57);
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+}

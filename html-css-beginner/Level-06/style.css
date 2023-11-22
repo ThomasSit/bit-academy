@@ -1,0 +1,63 @@
+body {
+    background-color: rgb(245, 190, 119);
+}
+
+.shadow{
+    color:rgb(172, 75, 218);
+    text-shadow: 2px 2px 5px #04cd79;
+}
+
+
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.doos {
+    background-color: rgb(86, 243, 222);
+    border:5px outset black;
+    text-align: center;
+
+}
+
+ul{
+  color:blue
+}
+
+li {
+    display: inline;
+    list-style:none;
+}
+
+.article{
+    margin:20px;
+    padding:10px;
+    border:1px solid black;
+}
+
+.footer{
+ position: absolute;
+ background-color: blue;
+ border:solid rgb(255, 251, 251);
+  bottom:0;
+ width: 100%;
+ height:auto;
+ text-align: center;
+}
+
+.inschrijfform{
+    width: 200px;
+}
+
+.button{
+        border-radius: 20px;
+}
+
+textarea{
+    border:2px solid rgb(229, 88, 63);
+}
+textarea:focus{
+    border: 3px solid rgb(35, 200, 93);
+    background-color: rgb(101, 60, 227);
+}

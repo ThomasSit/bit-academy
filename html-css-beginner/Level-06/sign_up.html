@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Level-06</title>
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="#">bit-adademy</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="sign_up.html">Sign-up</a></li>
+    </ul>
+    <h1 class="shadow">Bit Academy Sign-up</h1>
+
+    <form action="sign_up.html" method="post">
+        <!--for verwijst naar de input-->
+        <label for="name">Wat is jouw naam</label><br>
+        <input type="text" name="name" id="name" placeholder="Naam"><br>
+
+        <label for="email">email</label><br>
+        <input type="email" name="email" id="email" placeholder="email"><br>
+
+        <label for="telefoonnummer">telefoonnummer</label><br>
+        <input type="tel" name="telefoonnummer" id="telefoonnummer" placeholder="telefoonnummer"><br>
+
+        <label  for="password">pincode</label><br>
+        <input type="password" name="password" id="password" placeholder="pincode"><br>
+
+
+        
+        <!--Option select tussen alles van option value="naam"-->
+    <select name="provincie" id="provincie">
+        <option value="">Kies een provincie</option>
+        <option value="Noord-Holland">Noord-Holland</option>
+        <option value="Zuid-Holland">Zuid-Holland</option>
+        <option value="Utrecht">Utrecht</option>
+        <option value="Drenthe">Drenthe</option> 
+        <option value="Overijssel">Overijssel</option>
+        <option value="Gelderland">Gelderland</option>
+        <option value="Groningen">Groningen</option>
+        <option value="Flevoland">Flevoland</option>
+        <option value="Friesland">Friesland</option>
+        <option value="Limburg">Limburg</option>
+        <option value="Noord-Brabant">Noord-Brabant</option>
+        <option value="Zeeland">Zeeland</option>
+    </select>
+
+<h4>Hou jij van voetbal?</h4>
+<label for="ja">ja</label>
+<input type="radio" name="ja" id="ja"><br>
+<label for="nee">nee</label>
+<input type="radio" name="nee" id="nee"><br><br>
+
+<label for="maandag">Maandag</label>
+    <input type="checkbox" name="maandag" id="maandag" value="maandag"><br>
+   
+    <label for="dinsdag">dinsdag</label>
+    <input type="checkbox" name="dinsdag" id="dinsdag" value="dinsdag"><br>
+    <label for="woensdag">woensdag</label>
+    <input type="checkbox" name="woensdag" id="woensdag" value="woensdag"><br>
+  
+    <label for="donderdag">donderdag</label>
+    <input type="checkbox" name="donderdag" id="donderdag" value="donderdag"><br>
+   
+    <label for="vrijdag">vrijdag</label>
+    <input type="checkbox" name="vrijdag" id="vrijdag" value="vrijdag"><br>
+
+    <label for="zaterdag">zaterdag</label>
+    <input type="checkbox" name="zaterdag" id="zaterdag" value="zaterdag"><br>
+   
+    <label for="zondag">zondag</label>
+    <input type="checkbox" name="zondag" id="zondag" value="zondag"><br>
+   
+    <label for="comment">Comment</label>
+    <textarea id="comment" rows="10" cols="30" class="comment"></textarea>
+
+    <input class="button" type="submit" name="submit" value="Verzenden">
+</form>
+
+</body>
+</html>
