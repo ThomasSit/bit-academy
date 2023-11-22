@@ -2,9 +2,9 @@
 
 $r = readline('Hoeveel stapels wil je hebben? ');
 
-for ($i = 1; $i <= $r; $i++) {
+for ($a = 1; $a <= $r; $a++) {
     // str = string repeat 
-    echo str_repeat("* ", $i);
+    echo str_repeat("* ", $a);
     echo PHP_EOL;
-    $i + 1;
+    $a + 1;
 }
