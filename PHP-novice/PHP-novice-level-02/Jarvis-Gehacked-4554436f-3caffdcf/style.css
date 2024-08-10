@@ -1,0 +1,217 @@
+body {
+    background-color: rgb(240, 236, 236);
+    margin: 0;
+}
+
+.logo {
+    width: 15%;
+    height: auto;
+    display: block;
+    margin-left: 20%;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.balk {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(12, 12, 121);
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px;
+}
+
+.midden {
+    display: flex;
+    gap: 10px;
+}
+
+.rechts {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#logo_white {
+    height: 50px;
+}
+
+.home,
+.universe,
+.reviews,
+.feedback,
+.doelen,
+.leaderboard,
+.meer2 {
+    display: flex;
+}
+
+.icon {
+    height: 50px;
+}
+
+.icon_text,
+.review_text,
+.leaderboard_text,
+.feedback_icon {
+    color: white;
+    font-family: IBM Plex Mono, Menlo, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier, "monospace";
+}
+
+#reviews_icon {
+    height: 50px;
+}
+
+#feedback_icon {
+    height: 30px;
+}
+
+#leaderboard_icon {
+    height: 50px;
+}
+
+#profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 200%;
+    margin-top: 5px;
+}
+
+#meer_icon {
+    width: 55px;
+}
+
+/* alle content opmaak */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 10%;
+}
+
+.tato table {
+    background-color: #fff;
+    box-shadow: 1px 1px 16px 0px rgb(78, 72, 72);
+}
+
+.review_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.tato {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.over_1-1 {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 1px 1px 16px 0px rgb(78, 72, 72);
+}
+
+.vul,
+.bekijk {
+    background-color: #3ca771;
+    color: white;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+tr {
+    width: 100%;
+    height: 2cm;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+tr:nth-child(2) {
+    border-bottom: 1px solid black;
+}
+
+.tr2 {
+    width: 100%;
+    height: 2cm;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bekijk {
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .midden {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rechts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .meer2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #profile {
+        margin-top: 10px;
+    }
+
+    .feedback,
+    .doelen,
+    .leaderboard {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #leaderboard_icon {
+        margin-bottom: 10px;
+    }
+
+    .level_balk {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .tato {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .over_1-1 {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .vul,
+    .bekijk {
+        width: 80%;
+    }
+
+    tr,
+    .tr2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

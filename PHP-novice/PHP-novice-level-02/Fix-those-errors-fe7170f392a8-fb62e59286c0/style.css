@@ -1,0 +1,145 @@
+:root {
+    --formcolor: #FAF9F6;
+}
+
+* {
+    font-family: sans-serif;
+    background-color: var(--formcolor);
+}
+
+*[hidden],
+*[hidden] * {
+    visibility: hidden;
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+section,
+aside {
+    margin-top: 2rem;
+}
+
+section:not(:last-of-type) {
+    border-bottom: 1px solid black;
+    padding-bottom: 2rem;
+}
+
+h2 {
+    margin: 2rem;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.reservation {
+    min-width: 15rem;
+    max-width: fit-content;
+    outline: 1px solid gray;
+    border-radius: 1rem;
+    margin: 1rem;
+    box-shadow: 2px 2px 10px gray;
+}
+
+.reservation p,
+h3 {
+    margin: 5px;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.reservation *:nth-last-child(n+3) {
+    border-bottom: 1px dashed black;
+}
+
+#flash {
+    margin-top: 3rem;
+    opacity: 80%;
+    position: fixed;
+    background-color: red;
+    border: 1px solid red;
+    width: 50vw;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+#flashMessage {
+    background-color: #d7ecfa;
+}
+
+form {
+    max-width: 20rem;
+    width: fit-content;
+    padding: 2rem;
+    background-color: var(--formcolor);
+    border-radius: 1rem;
+    border: 1px solid gray;
+    outline-width: 20px;
+    outline: black;
+    box-shadow: 2px 2px 10px gray;
+}
+
+form * {
+    display: block;
+}
+
+form label {
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+    font-style: italic;
+    font-size: small;
+    background-color: var(--formcolor);
+}
+
+input,
+select {
+    background-color: var(--formcolor);
+    margin-bottom: 1rem;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    font-style: italic;
+    font-size: small;
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    padding-top: 0.2rem;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    height: 1.5rem;
+}
+
+button[type="submit"] {
+    background-color: green;
+}
+
+
+button.delete {
+    border-radius: 0 0 1rem 1rem;
+    background-color: red;
+    border: 2px solid red;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="database.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <aside id="flashContainer" class="center-container" hidden>
+        <div id="flash">
+            <p id="flashMessage">Message</p>
+        </div>
+    </aside>
+    <section id="makeReservation" class="center-container">
+        <form id="reservationForm">
+            <h3>Book a reservation here.</h3>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Jon Doe" required>
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date" required>
+            <label for="time">Time</label>
+            <input type="time" name="time" id="time" required>
+            <label for="partySize">Number of guests</label>
+            <select type="number" name="partySize" id="partySize" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <button type="submit">Get reservation</button>
+        </form>
+    </section>
+    <section class="showReservation" class="column-container">
+        <h2>Current bookings</h2>
+        <div id="reservations" class="container">
+        </div>
+    </section>
+</body>
+
+</html>
